@@ -3,7 +3,12 @@
 Tri-Tend (Tender Intelligence) by Tridel Technologies finds and scores tenders from India's public
 procurement portals for Tridel's focus areas.
 
-This repository holds only the app's releases: no source code.
+This repository holds the app's releases and its user manual: no source code.
+
+## User manual
+
+**[Read the Tri-Tend user manual](docs/USER_MANUAL.md)**: installing, the dashboard, scans, AI scores, working on a
+tender, tracking bids, settings and shortcuts. Also as a [PDF](docs/Tri-Tend-User-Manual.pdf).
 
 ## Updating
 

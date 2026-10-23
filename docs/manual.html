@@ -26,7 +26,7 @@
 <main id="main">
 <section class="doc-hero">
   <div class="wrap">
-    <span class="eyebrow">User manual · version <span data-version>3.7.2</span></span>
+    <span class="eyebrow">User manual · version <span data-version>3.7.3</span></span>
     <h1>How to use Tri-Tend</h1>
     <p>Installing, the dashboard, scans and AI scores, working on a tender, tracking bids, and every setting.</p>
     <div class="hero-actions">
@@ -39,7 +39,7 @@
   <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#s1">1 Introduction</a></li><li><a href="#s2">2 Installing and updating</a><ol><li><a href="#s2-1">2.1 Installing</a></li><li><a href="#s2-2">2.2 Updates</a></li><li><a href="#s2-3">2.3 Removing the app</a></li></ol></li><li><a href="#s3">3 The dashboard</a></li><li><a href="#s4">4 Finding tenders</a></li><li><a href="#s5">5 Scanning the portals</a><ol><li><a href="#s5-1">5.1 Australian portals</a></li></ol></li><li><a href="#s6">6 Scoring tenders with AI</a></li><li><a href="#s7">7 Working on a tender</a></li><li><a href="#s8">8 Tracking bids and deadlines</a></li><li><a href="#s9">9 Insights, map and documents</a></li><li><a href="#s10">10 Settings</a><ol><li><a href="#s10-1">10.1 AI</a></li><li><a href="#s10-2">10.2 Company</a></li><li><a href="#s10-3">10.3 Focus areas</a></li><li><a href="#s10-4">10.4 Alerts</a></li><li><a href="#s10-5">10.5 Daily routine</a></li><li><a href="#s10-6">10.6 Team</a></li><li><a href="#s10-7">10.7 About</a></li></ol></li><li><a href="#s11">11 Keyboard shortcuts</a></li><li><a href="#s12">12 Questions and problems</a></li></ol></nav>
   <article class="prose">
 <h1 class="band" id="s1">1 Introduction</h1>
-<p>Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.2 and the India, United Arab Emirates and Australia markets.</p>
+<p>Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.3 and the India, United Arab Emirates and Australia markets.</p>
 <p>What it does:</p>
 <ul><li><b>Finds tenders.</b> It reads India's public procurement portals: the Central and State eProcure portals (CPPP), GeM, the Andhra Pradesh, Telangana, Bihar and Gujarat portals, the public-sector companies' own portals (IndianOil, NTPC, Coal India, BHEL and others) and World Bank projects in India.</li><li><b>Australia.</b> AusTender, Buy NSW, Tenders WA, NT Tenders Online and Tasmania Tenders, with browser readers for QTenders Queensland and Tenders ACT. Access checks or maintenance can temporarily prevent a portal scan; previous results are kept.</li><li><b>United Arab Emirates.</b> A separate market with federal and emirate procurement sources, its own tender lists, AI scoring and bid workspace. Some sources require a browser check or supplier registration.</li><li><b>Scores them.</b> An AI gives every tender a score from 0 to 100 for how well it fits the company's focus areas, with a category and a one-line reason.</li><li><b>Reads the documents.</b> It downloads a tender's documents and has the AI review them: what is bought, eligibility against the company profile, and a bid or no-bid recommendation.</li><li><b>Tracks the bids.</b> A bid pipeline, a closing calendar, EMD and bank-guarantee records, reminders and a monthly report.</li></ul>
 <p>What you need:</p>
@@ -51,7 +51,8 @@
 <div class="note"><p><b>Note:</b> Only one copy of Tri-Tend can be open at a time. Opening it again brings the open window to the front.</p></div>
 <h2 class="sub" id="s2-2">2.2 Updates</h2>
 <p>Tri-Tend looks for a new version on GitHub once a day. When one is available it says so at the bottom of the window, with an <b>Install</b> button. The app closes, updates and opens again by itself. Tenders, scores, documents, the bid pipeline and settings all stay.</p>
-<p>To look straight away, open <b>Settings → About</b> and choose <b>Check for updates</b>.</p>
+<p>Routine updates download a small application package and reuse the libraries already on your PC. The updater checks the existing files, verifies replacements and keeps recovery copies. If the runtime is incompatible or incomplete, it downloads the full installer automatically. Fresh installations still use the full setup.</p>
+<p>To look straight away, open <b>Settings → About</b> and choose <b>Check for updates</b>. The Install button shows the download size.</p>
 <p>Copies older than 3.5.9 do not know about GitHub yet. Update them once by hand: close the app, then download and run the setup as in Section 2.1. Copies from 3.1.1 on can instead paste this address into <b>Settings → About → Update address</b> and choose <b>Check for updates</b>:</p>
 <p><code>https://github.com/Amandeep-Tridel/tri-tend/releases/latest/download/latest.json</code></p>
 <h2 class="sub" id="s2-3">2.3 Removing the app</h2>

@@ -1,6 +1,6 @@
 # Tri-Tend User Manual
 
-Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.2 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
+Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.3 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
 
 <!-- toc -->
 ## Contents
@@ -21,7 +21,7 @@ Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.2 · [Downl
 
 ## 1. Introduction
 
-Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.2 and the India, United Arab Emirates and Australia markets.
+Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.3 and the India, United Arab Emirates and Australia markets.
 
 What it does:
 
@@ -53,7 +53,9 @@ A new install starts with no tenders. Choose **Scan** (Section 5) to fill it, th
 
 Tri-Tend looks for a new version on GitHub once a day. When one is available it says so at the bottom of the window, with an **Install** button. The app closes, updates and opens again by itself. Tenders, scores, documents, the bid pipeline and settings all stay.
 
-To look straight away, open **Settings → About** and choose **Check for updates**.
+Routine updates download a small application package and reuse the libraries already on your PC. The updater checks the existing files, verifies replacements and keeps recovery copies. If the runtime is incompatible or incomplete, it downloads the full installer automatically. Fresh installations still use the full setup.
+
+To look straight away, open **Settings → About** and choose **Check for updates**. The Install button shows the download size.
 
 Copies older than 3.5.9 do not know about GitHub yet. Update them once by hand: close the app, then download and run the setup as in Section 2.1. Copies from 3.1.1 on can instead paste this address into **Settings → About → Update address** and choose **Check for updates**:
 

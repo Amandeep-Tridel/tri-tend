@@ -1,6 +1,6 @@
 # Tri-Tend User Manual
 
-Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.5.9 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
+Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.1 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
 
 <!-- toc -->
 ## Contents
@@ -21,11 +21,13 @@ Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.5.9 · [Downl
 
 ## 1. Introduction
 
-Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.5.9.
+Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.1 and the India, United Arab Emirates and Australia markets.
 
 What it does:
 
 - **Finds tenders.** It reads India's public procurement portals: the Central and State eProcure portals (CPPP), GeM, the Andhra Pradesh, Telangana, Bihar and Gujarat portals, the public-sector companies' own portals (IndianOil, NTPC, Coal India, BHEL and others) and World Bank projects in India.
+- **Australia.** AusTender, Buy NSW, Tenders WA, NT Tenders Online and Tasmania Tenders, with browser readers for QTenders Queensland and Tenders ACT. Access checks or maintenance can temporarily prevent a portal scan; previous results are kept.
+- **United Arab Emirates.** A separate market with federal and emirate procurement sources, its own tender lists, AI scoring and bid workspace. Some sources require a browser check or supplier registration.
 - **Scores them.** An AI gives every tender a score from 0 to 100 for how well it fits the company's focus areas, with a category and a one-line reason.
 - **Reads the documents.** It downloads a tender's documents and has the AI review them: what is bought, eligibility against the company profile, and a bid or no-bid recommendation.
 - **Tracks the bids.** A bid pipeline, a closing calendar, EMD and bank-guarantee records, reminders and a monthly report.
@@ -63,7 +65,9 @@ Use **Uninstall Tender Intelligence** in the Start menu, or Windows **Settings �
 
 ## 3. The dashboard
 
-The dashboard opens on what needs attention today.
+The dashboard opens on what needs attention today. Choose **Market** in the top bar to switch between **India**, **United Arab Emirates** and **Australia**. The lists, counts, exports, calendar, insights, pipeline and map follow the selected market. Switching between India and Australia reloads the page.
+
+In Australia, the Portal filter and scan panel show Australian sources, the map shows all eight states and territories, and the Indian rupee value filter is hidden. Australian closing times are converted to India Standard Time (IST); confirm the original deadline on the official tender page.
 
 ![The dashboard](images/dashboard.png)
 
@@ -79,7 +83,7 @@ The views along the top:
 | View | What it shows |
 | --- | --- |
 | Opportunities | Open tenders in your focus areas that score 60 or more |
-| All tenders | Every open tender from every portal |
+| All tenders | Every open tender in the selected market |
 | Closed | Tenders whose closing date has passed, kept for history |
 | Pipeline | The tenders you track, by stage (Section 8) |
 | Calendar | Tracked and high-priority tenders on the day they close |
@@ -115,7 +119,7 @@ Titles that contain one of your **words to exclude** (Section 10.3) are hidden. 
 *Figure 5.1 The scan panel*
 
 1. Choose **Scan** in the top bar.
-2. Tick the portals to read (all are ticked at first).
+2. Tick the portals to read in the selected market (all are ticked at first).
 3. Choose the mode:
    - **Quick** reads the newest listings until it reaches tenders already saved. It usually takes a few minutes. Use it every day.
    - **Full rescan** re-reads every listing page to catch date changes on older tenders. It takes hours, because the portals serve about one page a second.
@@ -125,6 +129,22 @@ Tenders whose closing date has passed move to the **Closed** view. A portal's li
 
 > **Note:** Some portals, such as Karnataka's and Chhattisgarh's, ask for a CAPTCHA before they list any tenders, so they cannot be scanned. The State eProcure portal is sometimes overloaded; if it fails, scan again later.
 
+### 5.1 Australian portals
+
+| Portal | Coverage and access |
+| --- | --- |
+| AusTender | Commonwealth agencies, including Bureau of Meteorology, AMSA and CSIRO |
+| Buy NSW | New South Wales tenders and expressions of interest; an AWS browser check can interrupt access |
+| Tenders WA | Western Australia; the portal's practice tender is excluded |
+| NT Tenders Online | Northern Territory; listing pages supply closing dates |
+| Tasmania Tenders | Tasmania; standing panels can have no fixed closing date |
+| QTenders Queensland | Queensland public opportunities; requires Edge or Chrome for its JavaScript search |
+| Tenders ACT | Australian Capital Territory; excludes the practice ATM; a browser check or maintenance may prevent access |
+
+Victoria and South Australia currently put browser checks in front of their lists and are not automated. Use their official portals directly. Tri-Tend does not solve or bypass access checks. A failed or incomplete scan retains that portal's previous tenders and reports the problem.
+
+To start: choose **Australia**, open **Scan**, choose the Australian portals, then **Start scan**. In **Settings → Daily routine**, **Scan: Australia** enables these sources in scheduled scans; it is off by default. Routine scans use their configured sources regardless of the market currently displayed.
+
 ## 6. Scoring tenders with AI
 
 **AI scan** gives each tender a score from 0 to 100, a category (one of your focus areas) and a one-line reason. Choose an AI provider in **Settings → AI** first (Section 10.1).
@@ -133,11 +153,11 @@ Tenders whose closing date has passed move to the **Closed** view. A portal's li
 
 *Figure 6.1 The AI scan panel*
 
-1. Choose **AI scan** in the top bar.
+1. Select the required **Market**, then choose **AI scan** in the top bar. Manual AI scans affect only that market.
 2. Choose which tenders to score:
    - **New tenders**: those with no score yet. Use this after each scan.
    - **Re-check opportunities**: score the current opportunities again with today's rules, so the ones that do not fit drop out.
-   - **Re-score all**: every saved tender again. This takes the longest.
+   - **Re-score all**: every saved tender in the selected market again. This takes the longest.
 3. Choose **Start AI scan**.
 
 How to read the scores:
@@ -253,6 +273,8 @@ Plans have usage limits that renew over time. **Manage usage** opens the provide
 ### 10.2 Company
 
 The company profile tells the AI what Tridel offers, where it works, its turnover, experience, certifications, past projects and what it is not interested in. AI scores and document reviews use it, so the more specific it is, the better the results. The fields under **For letters and forms** fill in the letters made from a tender's Bid tab.
+
+Before scoring Australian tenders, add **Australia** to **Regions served**, keeping your existing regions, and choose **Save company profile**. This tells the AI that Australian opportunities are within your service area. The update preserves each PC's existing profile; other users must set their own regions.
 
 ### 10.3 Focus areas
 

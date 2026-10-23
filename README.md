@@ -1,7 +1,9 @@
 # Tri-Tend
 
-Tri-Tend (Tender Intelligence) by Tridel Technologies finds and scores tenders from India's public
-procurement portals for Tridel's focus areas.
+Tri-Tend (Tender Intelligence) by Tridel Technologies finds and scores tenders in India, Australia and
+the United Arab Emirates for Tridel's focus areas. Choose the market in the dashboard; lists and manual
+AI scans follow that choice. Australian coverage includes AusTender, Buy NSW, Tenders WA, Northern
+Territory and Tasmania, with Queensland QTenders and Tenders ACT readers subject to portal access checks.
 
 **Website: [amandeep-tridel.github.io/tri-tend](https://amandeep-tridel.github.io/tri-tend/)**: what it does, how to use
 it in six steps, and the download.

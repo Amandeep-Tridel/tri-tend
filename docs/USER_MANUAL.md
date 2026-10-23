@@ -1,6 +1,6 @@
 # Tri-Tend User Manual
 
-Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.1 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
+Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.2 · [Download the latest version](https://github.com/Amandeep-Tridel/tri-tend/releases/latest) · [PDF version](Tri-Tend-User-Manual.pdf)
 
 <!-- toc -->
 ## Contents
@@ -21,7 +21,7 @@ Tri-Tend (Tender Intelligence) by Tridel Technologies · version 3.7.1 · [Downl
 
 ## 1. Introduction
 
-Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.1 and the India, United Arab Emirates and Australia markets.
+Tri-Tend finds public tenders that fit Tridel's business, scores them with AI and helps prepare the bids. It runs on a Windows PC and keeps all its data on that PC. This manual covers version 3.7.2 and the India, United Arab Emirates and Australia markets.
 
 What it does:
 
@@ -67,7 +67,7 @@ Use **Uninstall Tender Intelligence** in the Start menu, or Windows **Settings �
 
 The dashboard opens on what needs attention today. Choose **Market** in the top bar to switch between **India**, **United Arab Emirates** and **Australia**. The lists, counts, exports, calendar, insights, pipeline and map follow the selected market. Switching between India and Australia reloads the page.
 
-In Australia, the Portal filter and scan panel show Australian sources, the map shows all eight states and territories, and the Indian rupee value filter is hidden. Australian closing times are converted to India Standard Time (IST); confirm the original deadline on the official tender page.
+In Australia, the Portal filter and scan panel show Australian sources, the map shows all eight states and territories, and values and value filters use Australian dollars (AUD). Dashboard totals, tender details, deposits, bid prices, exports and reports use AUD; stored amounts are not exchange-rate converted. Indian and Australian totals stay separate. Australian closing times are converted to India Standard Time (IST); confirm the original deadline on the official tender page.
 
 ![The dashboard](images/dashboard.png)
 
